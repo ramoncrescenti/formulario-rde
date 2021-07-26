@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+#logo {
+  height: 140px;
+  width: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+textarea {
+  max-width: 331px;
+  max-height: 171px;
+}
+
+.formulario {
+  background: #c7c7c7;
+  border-radius: 10px;
+  padding: 25px 30px 25px 25px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 320px;
+}
+
+.formulario form {
+  text-align: left;
+}
+
+.formulario label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.formulario input {
+  display: block;
+  margin: 5px 0 0px;
+  padding: 5px;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+}
+
+.formulario button {
+  background: #0d718d;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid #064758;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+#inputFile {
+  display: none;
+}
+
+.custom-file-upload {
+  border: 1px solid #0d718d;
+  border-radius: 5px;
+  color: #fff;
+  background: #0d718d;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  width: 140px;
+}
