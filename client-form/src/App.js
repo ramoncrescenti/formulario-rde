@@ -9,13 +9,14 @@ import { Button } from './components/Button';
 
 function App() {
 
-  const [data, setData] = React.useState(null);
+  /*const [data, setData] = React.useState(null);
 
   React.useEffect(() => {
     fetch("/api")
       .then(res => res.json()
       .then(data => setData(data.message)));
   }, []);
+  */
 
   const [form, setForm] = useState({
     quantity: 0,
@@ -42,7 +43,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} id="logo" alt="logo"></img>
-        <p>{!data ? "Loading..." : data}</p>
       </header>
     <div className="formulario">
       <form
@@ -63,7 +63,7 @@ function App() {
         <TextArea value={form.notes} onChange={(e) => setForm((state) => ({...state, notes: e.target.value}))}></TextArea>
         <Button texto='Enviar'/>
         <Label texto='Selecione o arquivo .cdr/psd ou uma imagem'/>
-        <label for="inputFile" class="custom-file-upload">Escolher arquivo</label>
+        <label htmlFor="inputFile" className="custom-file-upload">Escolher arquivo</label>
         <input type="file" id="inputFile" accept=".png"
           onChange={(e) => setForm((state) => ({...state, arq: e.target.value}))}>
         </input>
