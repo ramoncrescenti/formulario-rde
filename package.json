@@ -9,8 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/index.js",
-    "build": "cd client-form && npm run build",
-    "install": "cd client-form && npm install"
+    "build": "cd client-form && npm install && npm run build"
   },
   "author": "Ramon",
   "license": "ISC",

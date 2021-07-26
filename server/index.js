@@ -3,10 +3,10 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const path = require('path');
 
-app.use(express.static(path.resolve(__dirname, '.../client-form/build')));
+app.use(express.static(path.resolve(__dirname, 'build')));
 
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '.../client-form/build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
 });
 
 app.get('/', (req, res) => {
