@@ -42,6 +42,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} id="logo" alt="logo"></img>
+        <p>{!data ? "Loading..." : data}</p>
       </header>
     <div className="formulario">
       <form
